@@ -1,10 +1,10 @@
 lcurses
 =======
 
-By the [lcurses project][GitHub]
+By the [lcurses project][GitHub] - well, this is forked off by Adrian Chadd in 2026.
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://mit-license.org)
-[![travis-ci status](https://secure.travis-ci.org/lcurses/lcurses.png?branche=master)](http://travis-ci.org/lcurses/lcurses/builds)
+[![travis-ci status](https://secure.travis-ci.org/erikarn/lcurses.png?branche=master)](http://travis-ci.org/erikarn/lcurses/builds)
 [![Stories in Ready](https://badge.waffle.io/lcurses/lcurses.png?label=ready&title=Ready)](https://waffle.io/lcurses/lcurses)
 
 
@@ -25,7 +25,7 @@ Documentation is generated via [LDoc][] and is available at:
 lcurses is released under the [MIT license][mit] (the same license as
 Lua itself).  There is no warranty.
 
-[github]: https://github.com/lcurses/lcurses "lcurses repository"
+[github]: https://github.com/erikarn/lcurses "lcurses repository"
 [lua]: http://www.lua.org/ "The Lua Project"
 [luaposix]: https://github.com/luaposix/luaposix "luaposix repository"
 [mit]: http://mit-license.org "MIT license"
@@ -44,7 +44,13 @@ install the latest release (recommended):
 To install current git master (for testing):
 
 ```bash
-    luarocks install https://raw.githubusercontent.com/lcurses/lcurses/master/lcurses-git-1.rockspec
+    luarocks install https://raw.githubusercontent.com/erikarn/lcurses/master/lcurses-git-1.rockspec
+```
+
+To run bootstrap under FreeBSD, you'll need to pass in which
+version of luarocks to run it with, eg:
+
+```env LUAROCKS=luarocks54 ./bootstrap
 ```
 
 To install without LuaRocks, check out the sources from the
@@ -81,6 +87,6 @@ points when writing new code:
    indentation using SPACEs in Lua sources.
 
 
-[issues]: https://github.com/lcurses/lcurses/issues "lcurses issues"
+[issues]: https://github.com/erikarn/lcurses/issues "lcurses issues"
 [LuaRocks]: http://www.luarocks.org "Lua package manager"
 [LDoc]: https://github.com/stevedonovan/LDoc "Lua documentation generator"
