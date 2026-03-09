@@ -760,7 +760,7 @@ slingshot_require_slingshot_dotgitmodules ()
         func_verbose "adding slingshot entries to '.gitmodules'"
 
         test -n "$slingshot_path" || slingshot_path=slingshot
-        test -n "$slingshot_url"  || slingshot_url=git://github.com/gvvaughan/slingshot.git
+        test -n "$slingshot_url"  || slingshot_url=https://github.com/gvvaughan/slingshot.git
 
         {
           echo '[submodule "slingshot"]'
@@ -4583,7 +4583,7 @@ func_require_dotgitmodules ()
         # If the .gitmodules file doesn't exist, create it now, and mark
         # it as ignored for the VCS.
         test -n "$gnulib_path" || gnulib_path=gnulib
-        test -n "$gnulib_url"  || gnulib_url=git://git.sv.gnu.org/gnulib
+        test -n "$gnulib_url"  || gnulib_url=https://git.sv.gnu.org/gnulib
 
         {
           echo '[submodule "gnulib"]'
